@@ -7,17 +7,16 @@ import "./login.css";
 
 export const LoginScreen = () => {
   const dispatch = useDispatch();
-
   const [formLoginValues, handleLoginInputChange] = useForm({
-    lEmail: "eduardo@gmail.com",
-    lPassword: "123456",
+    lEmail: "example@hotmail.com",
+    lPassword: "",
   });
 
   const [formRegisterValues, handleRegisterInputChange] = useForm({
-    rName: "Nando",
-    rEmail: "nando@gmail.com",
-    rPassword1: "123456",
-    rPassword2: "123456",
+    rName: "Name",
+    rEmail: "example@hotmail.com",
+    rPassword1: "",
+    rPassword2: "",
   });
 
   const { rName, rEmail, rPassword1, rPassword2 } = formRegisterValues;
